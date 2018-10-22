@@ -4,7 +4,8 @@ import numpy as np
 """Reads in data"""
 """Trying to predict target"""
 
-directory_path = "/Users/jasonterry/Documents/Scripts/Misc/Kaggle/astro"
+directory_path = "/Users/jasonterry/Documents/Scripts/Misc/My_stuff/" \
+                 "Kaggle/astro"
 
 metadata_columns = ["object_id", "ra", "decl", "gal_l", "gal_b"	"ddf",
                     "hostgal_specz", "hostgal_photoz", "hostgal_photoz_err",
