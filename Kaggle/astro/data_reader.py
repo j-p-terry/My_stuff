@@ -31,11 +31,9 @@ def read(test=False):
 
     return data, metadata
 
-def merge():
+def merge(data, metadata):
 
     """puts data and metadata into one frame"""
-
-    data, metadata = read(test=False)
 
     for column in list(metadata):
         if column != "object_id":
@@ -48,4 +46,10 @@ def merge():
 
     return data
 
+def get_data():
 
+    """Gets and merges data"""
+
+    data, metadata=read(test=False)
+    data = merge(data, metadata)
+    return data
